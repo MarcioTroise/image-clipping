@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Mark</title>
+
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+            background-color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: aliceblue;
+            text-shadow: 1px 1px black;
+            padding-top: 1rem;
+        }
+        #main-box {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            max-width: 90%;
+            padding: 1rem;
+        }
+        .project object{
+            width: 95%;
+            height: 100%;
+        }
+        .one, .two {
+            width: 450px;
+            height: 600px;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 750px){
+            #main-box {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Water Mark for images upload</h1>
+    <div id="main-box">
+        <div class="project one">
+            <object data="exemplo1/exemplo1.html" type=""></object>
+        </div>
+
+        <div class="project two">
+            <object data="exemplo2/exemplo2.html" type=""></object>
+            
+        </div>
+    </div>
+</body>
+</html>

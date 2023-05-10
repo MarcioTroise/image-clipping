@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca D'agua Match</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    <style>
+        * {
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .main-container {
+            background-color: #fff;
+            max-width: 700px;
+            margin: 0 auto;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 1rem;
+            /* display: flex;
+            align-items: center;
+            justify-content: space-evenly; */
+            height: 100%;
+        }
+
+        .text-img-up {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        h1 {
+            font-size: 200%;
+            padding-top: 1rem;
+        }
+
+        #imageInput {
+            margin: 1em;
+        }
+
+        input[type="file"]  {
+            display: none;
+        }
+
+        .span-text {
+            font-size: 11pt;
+        }
+
+        .imageContainer {
+            margin: 1rem auto;
+        }
+
+        .label-img {
+            width: 170px;
+            display: block;
+            font-weight: bold;
+            padding: 7px 10px;
+            border-radius: 5px;
+            margin: 0 5px 25px 0;
+            background-color: red;
+            border: none;
+            color: #fff;
+            box-shadow: 3px 3px 4px 0px black;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .label-img:hover {
+            background-color: darkred;
+        }
+
+        #imagePreview {
+            min-width: 250px;
+            max-width: 100%;
+            min-height: 250px;
+            max-height: 400px;
+            margin: 0 auto; 
+            border-top: .3rem ridge red;
+            border-bottom: .3rem groove red;
+            border-left: .3rem ridge #000;
+            border-right: .3rem groove #000;
+            border-radius: 3px;
+            background-color: gainsboro;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 600px){
+            .buttons {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+<body>
+    <div class="main-container">
+        <div class="text-img-up">
+            <h1>
+                Imagem Marca d'agua
+            </h1>
+            <span class="span-text">
+                Selecione uma imagem <br> 
+                Formatos: JPG, PNG, WEBP
+            </span>
+        <input type="file" name="imageInput" id="imageInput" >
+        </div>
+        <div class="imageContainer">
+            <img id="imagePreview" src="">
+        </div>
+        <div class="buttons">
+            <label for="imageInput" class="label-img">
+                <i class="fa fa-file-image-o" aria-hidden="true"></i> imagem
+            </label>
+            <a id="dwl-img" class="label-img donwload" download><i class="fa fa-download"></i> Download</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    

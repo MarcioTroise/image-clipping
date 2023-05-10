@@ -1,0 +1,58 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #221f1f;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 30px solid transparent;
+}
+
+header, main{
+    max-width: 500px;
+    margin: auto;
+    color: orange;
+    padding: 20px;
+    text-align: center;
+}
+
+button#select-image {
+    width: 160px;
+    padding: 8px 15px;
+    font-weight: 600;
+    position: relative;
+    background-color: orange;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#select-image:hover {
+    background-color: yellow;
+}
+
+#photo-file {
+    display: none;
+}
+
+#photo-preview {
+    margin: 1rem auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+#selection-tool {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    display: none; /*vou fazer aparecer no JS */
+    border: 2px dashed greenyellow;
+}
+
+
