@@ -83,7 +83,7 @@ fileInput.addEventListener('change', function(event) {
     context.drawImage(image, 0, 0);
 
     // adiciona texto e estilo a marca d'água
-    context.font = '2rem Arial';
+    context.font = '3.5rem Arial';
     context.fillStyle = 'rgba(255, 255, 255, 0.3)';
     // centralizando o texto
     context.translate(canvas.width / 2, canvas.height / 2.5);
