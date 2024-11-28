@@ -7,3 +7,5 @@ adicionar a de marca d'agua, de sua escolha (letras e numeros) interna na imagem
 ### Recorte de imagem aredondada PNG
 A imagem da direita representa a segunda parte do projeto onde o usuário pode fazer o 
 recorte aredondada (circular) de uma imagem enviada.
+
+<img src="exemplo1/mark-water.PNG" width="90%" style="max-width: 500px;width:100%" />
