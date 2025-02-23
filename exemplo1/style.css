@@ -105,6 +105,12 @@ a {
     text-decoration: none;
 }
 
+.explication {
+    width: 100%;
+    padding: 1rem;
+
+}
+
 @media screen and (max-width: 600px){
     .buttons {
         flex-wrap: wrap;
