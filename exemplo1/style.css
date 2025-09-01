@@ -12,7 +12,8 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center;
     padding: 1rem;
-    height: 690px;
+    height: auto;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
